@@ -11,12 +11,14 @@ NOTE: I am a simple man.. I will generate a single static html-file that is inde
 ## How to use
 (1) Clone or download repo
 
-(2) Open repo path in terminal and run:
+(2) Throw some json-files into the data folder
+
+(3) Open repo path in a terminal and run:
 ```text 
 npm i
 ```
 ```text
-npm build run  
+npm run build 
 ```
 
-(3) Check so that the generated .html file is the way you want it
+(4) Check so that the generated .html file is the way you want it
