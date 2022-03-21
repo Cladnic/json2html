@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.11.5/r-2.2.9/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.11.5/r-2.2.9/datatables.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      function loadTable (versionNumber) {
+        //Hack to be able to reinitialize datatable
+        table = $('#table_id').DataTable();
+        table.destroy();
+        //Populate datatable
+        let data = {{{data}}}[versionNumber]
+        table = $('#table_id').DataTable({
+          responsive: true,
+          data,
+          columns: [
+            { data: 'Group' },
+            { data: 'Property name' },
+            { data: 'Latest change' },
+            { data: 'value' }
+          ]
+        })
+      }
+    </script>
+  </head>
+  <body>
+    <!--Dropdown menu for versions-->
+    <label for="product-version">Choose Product Version</label>
+    <select name="product-version" id="product-version">
+      <option value="1.17">1.17</option>
+      <option value="1.18">1.18</option>
+      <option value="1.19">1.19</option>
+      <option value="1.20">1.20</option>
+    </select>
+    
+    <!--Table-->
+    <table id="table_id" style="width: 100%" class="display">
+      <thead>
+        <tr>
+          <th>Group</th>
+          <th>Parameter</th>
+          <th>Change</th>
+          <th>version</th>
+        </tr>
+      </thead>
+    </table>
+    <script>
+      document.querySelector('#product-version').addEventListener('change', event => loadTable(event.target.value))
+    </script>
+  </body>
+</html>
