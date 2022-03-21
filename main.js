@@ -1,5 +1,5 @@
-const Handlebars = require('handlebars')
-const { readFileSync, readdirSync, writeFileSync } = require('fs')
+import Handlebars from 'handlebars';
+import { readFileSync, readdirSync, writeFileSync } from 'fs';
 //let version2 = readFileSync('./data/version2.json').toString()
 
 let jsondata = ""
