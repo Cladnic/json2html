@@ -23,3 +23,6 @@ npm run build
 This will generate a .html-file in the repo directory
 
 (4) Check so that the generated .html-file is the way you want it. Then you can move it and use it however you'd like
+
+^
+This is what I want it to work like, but right now you have to edit the handlebars template file to match the columns of the table with the json-file keys.
