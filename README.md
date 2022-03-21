@@ -21,4 +21,4 @@ npm i
 npm run build 
 ```
 
-(4) Check so that the generated .html file is the way you want it
+(4) Check so that the generated .html file is the way you want it. Then you can move it and use it however you'd like
