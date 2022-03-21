@@ -6,7 +6,7 @@
 
 I wanna be able to throw some json-files into a directory and automatically generate html tables for them, but I couldn't really find anything like that on the internet, so I'll just make it myself.
 
-NOTE: I am a simple man.. I will generate a single static html-file that is independant on any other files so it is easy to move around. This is probably not very good, but it is easy :stuck_out_tongue_winking_eye:
+NOTE: I am a simple man.. I will generate a single static html-file that is independent on any other files so it is easy to move around. This is probably not very good, but it is easy :stuck_out_tongue_winking_eye:
 
 ## How to use
 (1) Clone or download repo
