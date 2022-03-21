@@ -1,15 +1,10 @@
-# html-table-generation
-Generate html table from JSON
+# json2html
+
+### :small_red_triangle: Status : Work in progress :running:
 
 ## Background
 
-The main idea for this is to create html tables to provide software version release information - what has changed in this release etc - in an easy way.
-
-This would be done through adding a json-file to a data directory and simply generate a new .html-file.
-
-The new file would have a added drop down menu option for that release version which would include a html table with all changes made.
-
-(intended to be used for helm parameter release update information, but should be easy enough to configure for other areas)
+I wanna be able to throw some json-files into a directory and automatically generate html tables for them, but I couldn't really find anything like that on the internet, so I'll just make it myself.
 
 ## How to use
 (1) Clone or download repo
