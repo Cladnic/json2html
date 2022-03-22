@@ -27,3 +27,7 @@ This will generate a .html-file in the repo directory
 ---
 &#8593;
 This is what I want it to work like, but right now you have to edit the handlebars template file to match the columns of the table with the json-file keys.
+
+## Troubleshooting
+
+If you get errors when running `npm run build` about imports, then make sure that you update your node js version and it should work.
