@@ -1,14 +1,14 @@
 {
-  "name": "johan-test",
+  "type": "module",
+  "name": "json2html",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
-  "type": "module",
   "scripts": {
     "build": "node main.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Cladnic",
   "license": "ISC",
   "dependencies": {
     "handlebars": "^4.7.7"
